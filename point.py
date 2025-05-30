@@ -34,12 +34,27 @@ class Point:
     def distance_from00(p: "Point") -> float:
         return math.sqrt(p.x ** 2 + p.y ** 2)
 
+    # Point
+    # p1 = Point...
+    # p2 = Point
+    # p1 + p2
+    # p1 - p2
+    # p1 == p2
+    # p1 != p2
+    # p1 > p2
+    # p1 * 3
+    # len
+    # for v in p1:
+    #   ...
+
     def __add__(self, other: "Point, int"):
         if isinstance(other, Point):
             # Point
             new_point = Point(self.x + other.x, self.y + other.y)
         elif isinstance(other, (int, float)):
             # int
+
+            
             new_point = Point(self.x + other, self.y + other)
         elif isinstance(other, tuple):
             # tuple
